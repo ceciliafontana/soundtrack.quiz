@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Page where you can create and do quizzes on soundtracks">
+    <meta name="robots" content="index, follow">
+    <title>SOUNDTRACK.QUIZ</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/ba6f80064e.js" crossorigin="anonymous"></script>
+       
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+	<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="#"> <i class="fa-solid fa-compact-disc" style="color: black; font-size: 55px; transform: rotate(0deg); padding: 10px 30px 10px 10px"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active" >
+        <a class="nav-link" href="index.html" style="color: black"> <i class="fa-solid fa-house" style="padding: 0px 5px 0px 0px"></i>HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: black"> <i class="fa-solid fa-pen"></i> CREATE QUIZ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: black"> <i class="fa-solid fa-comments"></i> COMMUNITY</a>
+      </li>
+    </ul>
+
+
+    <form class="form-inline my-2 my-lg-0" style="padding: 10px 10px 10px 50px">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"  >Search</button>
+    </form>
+  </div>
+
+  <div class="btn-group">
+  <button type="button" class="btn btn-danger" style="padding: 10px 10px 10px 10px"> <i class="fa-solid fa-user" style="padding: 0px 5px 0px 0px"></i> LOG IN </button>
+  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"> MY PROFILE </a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#"> LOG OUT </a>
+  </div>
+</div>
+</nav>
+
+	</header>
+
+
+
+
+
+
+
+
+<main>
+
+<div class="quizsection" class="container">
+  <nav aria-label="breadcrumb" style="
+  background-color: transparent;">
+  <ol class="breadcrumb" style="padding-top: 0px;
+  padding-bottom: 5px;
+  background-color: transparent;">
+    <li class="breadcrumb-item active" aria-current="page" style="background-color: transparent; color: white"> <a href="index.html" style="background-color: transparent; color: white"> Home</a>/ Quiz </li>
+  </ol>
+  </nav>
+
+<h2 class="titolothirdsection" style="color: #DC3546; padding: 0px 0px 0px 0px"> QUIZ </h2>
+<h4 class="sottotitolothirdsection" style="color: black; padding: 40px 0px 30px 0px"> Can you guess all the answers? </h4>
+
+
+
+<div class="cardquiz" class="container">
+  <audio controls>
+  <source src="audio/audio1.ogg" type="audio/ogg">
+  <source src="audio/audio1.mp3" type="audio/mpeg">
+  </audio>
+  <div class="card-bodyquiz">
+    1. From which saga is this song?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group1">
+  <label class="form-check-label" for="exampleRadios1">
+    The Lord of the Rings
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group1">
+  <label class="form-check-label" for="exampleRadios2">
+    The Chronicles of Narnia
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group1">
+  <label class="form-check-label" for="exampleRadios3">
+    Harry Potter
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group1">
+  <label class="form-check-label" for="exampleRadios4">
+    Percy Jackson
+  </label>
+  </div>
+</div>
+
+
+<div class="cardquiz3" class="container">
+  <div class="card-bodyquiz">
+    2. Of which film was the first movie soundtrack album ever commercially released?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group2">
+  <label class="form-check-label" for="exampleRadios1">
+    King Kong (1933)
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group2">
+  <label class="form-check-label" for="exampleRadios2">
+    Snow White and the Seven Dwarfs (1937)
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group2">
+  <label class="form-check-label" for="exampleRadios3">
+    Fantasia (1940)
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group2">
+  <label class="form-check-label" for="exampleRadios4">
+    The Jazz Singer (1927)
+  </label>
+  </div>
+</div>
+
+
+<div class="cardquiz" class="container">
+  <audio controls>
+  <source src="audio/audio2.ogg" type="audio/ogg">
+  <source src="audio/audio2.mp3" type="audio/mpeg">
+  </audio>
+  <div class="card-bodyquiz">
+    3. From which tv series is this song?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group3">
+  <label class="form-check-label" for="exampleRadios1">
+    Stranger Things
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group3">
+  <label class="form-check-label" for="exampleRadios2">
+    Shadowhunters
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group3">
+  <label class="form-check-label" for="exampleRadios3">
+    Twin Peaks
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group3">
+  <label class="form-check-label" for="exampleRadios4">
+    I Am Not Okay with This
+  </label>
+  </div>
+</div>
+
+
+<div class="cardquiz3" class="container">
+  <div class="card-bodyquiz">
+    4. What is the best-selling movie soundtrack of all time?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group4">
+  <label class="form-check-label" for="exampleRadios1">
+    The Bodyguard soundtrack
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group4">
+  <label class="form-check-label" for="exampleRadios2">
+    The Dirty Dancing soundtrack
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group4">
+  <label class="form-check-label" for="exampleRadios3">
+    The Titanic soundtrack
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group4">
+  <label class="form-check-label" for="exampleRadios4">
+    The Grease soundtrack
+  </label>
+  </div>
+</div>
+
+<div class="cardquiz" class="container">
+  <audio controls>
+  <source src="audio/audio3.ogg" type="audio/ogg">
+  <source src="audio/audio3.mp3" type="audio/mpeg">
+  </audio>
+  <div class="card-bodyquiz">
+    5. From which Disney movie is this song?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group5">
+  <label class="form-check-label" for="exampleRadios1">
+    The Little Mermaid
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group5">
+  <label class="form-check-label" for="exampleRadios2">
+    Cinderella
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group5">
+  <label class="form-check-label" for="exampleRadios3">
+    Finding Nemo
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group5">
+  <label class="form-check-label" for="exampleRadios4">
+    Beauty and the Beast
+  </label>
+  </div>
+</div>
+
+<div class="cardquiz3" class="container">
+  <div class="card-bodyquiz">
+    6. What is the biggest selling Disney song of all time?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group6">
+  <label class="form-check-label" for="exampleRadios1">
+    “Can You Feel the Love Tonight”, The Lion King
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group6">
+  <label class="form-check-label" for="exampleRadios2">
+    “Let It Go”, Frozen
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group6">
+  <label class="form-check-label" for="exampleRadios3">
+    “We Don’t Talk About Bruno”, Encanto
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group6">
+  <label class="form-check-label" for="exampleRadios4">
+    “A Whole New World”, Aladdin
+  </label>
+  </div>
+</div>
+
+<div class="cardquiz" class="container">
+  <audio controls>
+  <source src="audio/audio4.ogg" type="audio/ogg">
+  <source src="audio/audio4.mp3" type="audio/mpeg">
+  </audio>
+  <div class="card-bodyquiz">
+    7. From which video game is this song?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group7">
+  <label class="form-check-label" for="exampleRadios1">
+    The Sims
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group7">
+  <label class="form-check-label" for="exampleRadios2">
+    Animal Crossing
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group7">
+  <label class="form-check-label" for="exampleRadios3">
+    Little Dragon Cafe
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group7">
+  <label class="form-check-label" for="exampleRadios4">
+    Happy Street
+  </label>
+  </div>
+</div>
+
+
+<div class="cardquiz3" class="container">
+  <div class="card-bodyquiz">
+    8. Who composed the musics for Jaws, Saving Private Ryan and Jurassic Park, and is the most famous soundtrack composer?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group8">
+  <label class="form-check-label" for="exampleRadios1">
+    John Williams
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group8">
+  <label class="form-check-label" for="exampleRadios2">
+    Hans Zimmer
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group8">
+  <label class="form-check-label" for="exampleRadios3">
+    Ennio Morricone
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group8">
+  <label class="form-check-label" for="exampleRadios4">
+    John Barry
+  </label>
+  </div>
+</div>
+
+
+<div class="cardquiz" class="container">
+  <audio controls>
+  <source src="audio/audio5.ogg" type="audio/ogg">
+  <source src="audio/audio5.mp3" type="audio/mpeg">
+  </audio>
+  <div class="card-bodyquiz">
+    9. From which video game is this song?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group9">
+  <label class="form-check-label" for="exampleRadios1">
+    Oblivion
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group9">
+  <label class="form-check-label" for="exampleRadios2">
+    The Witcher
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group9">
+  <label class="form-check-label" for="exampleRadios3">
+    The Elder Scrolls V: Skyrim
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group9">
+  <label class="form-check-label" for="exampleRadios4">
+    Dark Souls 
+  </label>
+  </div>
+</div>
+
+
+<div class="cardquiz3" class="container">
+  <div class="card-bodyquiz">
+    10. “(I've Had) The Time of My Life”, “Hungry Eyes” and “She's Like the Wind” were the theme songs for which hit-film?
+  </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios1" value="option1" name="group10">
+  <label class="form-check-label" for="exampleRadios1">
+    Pretty Woman
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option2" name="group10">
+  <label class="form-check-label" for="exampleRadios2">
+    Flashdance
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option3" name="group10">
+  <label class="form-check-label" for="exampleRadios3">
+    Footloose
+  </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" id="exampleRadios2" value="option4" name="group10">
+  <label class="form-check-label" for="exampleRadios4">
+    Dirty Dancing
+  </label>
+  </div>
+</div>
+
+<a href="answers.html" class="button5"> SEE ANSWERS </a>
+
+
+</div>
+
+</main>
+
+
+
+
+
+<footer>
+<div class="footersection" class="container">
+  <div class="row" style="padding: 20px 150px 0px 150px" class="container">
+    <div class="col-sm-2"><a class="a3" href="index.html" >Terms and Conditions </a> </div>
+    <div class="col-sm-2"><a class="a3" href="index.html">Contact Us </a> </div>
+    <div class="col-sm-2"> <a class="a3" href="index.html">Cookie Policy </a> </div>
+    <div class="col-sm-2"> <a class="a3" href="index.html"> FAQs </a> </div>
+    <div class="col-sm-2"> <a class="a3" href="index.html">Credit Section </a> </div>
+    <div class="col-sm-2"><a class="a3" href="index.html">Privacy Policy </a> </div>
+  </div>
+<div class="container" style="padding: 30px 300px 0px 300px; text-align: center">
+  <div class="row" >
+    <div class="col"> <button class="btn"> <i class="fa-brands fa-facebook-square"></i> </button> </div>
+    <div class="col"> <button class="btn"> <i class="fa-brands fa-instagram-square"></i>  </button>  </div>
+    <div class="col"> <button class="btn"> <i class="fa-brands fa-twitter-square"></i>  </button> </div>
+    <div class="col"> <button class="btn"> <i class="fa-brands fa-snapchat-square"></i>  </button> </div>
+  </div>
+</div>
+<a href="abstract.html" class="buttonlast"> <i class="fa-solid fa-chalkboard-user" style="padding: 0px 5px 0px 0px"></i>ABSTRACT </a>
+</div>
+<div class="footersection2" class="container"> 
+<p class="last" class="container"> 
+© 2022 &nbsp;&nbsp; <i class="fa-solid fa-compact-disc" style="color: black; font-size: 20px; transform: rotate(0deg); padding: 0px 0px 0px 0px"></i> SOUNDTRACK.QUIZ </p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
+
+
+
